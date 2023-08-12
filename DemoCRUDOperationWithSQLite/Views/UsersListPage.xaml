@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoCRUDOperationWithSQLite.Views.UsersListPage"
+             xmlns:viewmodel="clr-namespace:DemoCRUDOperationWithSQLite.ViewModels"
+             x:DataType="viewmodel:UsersListPageViewmodel"
+             xmlns:models="clr-namespace:DemoCRUDOperationWithSQLite.Models"
+             Title="User List">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text=" + " Command="{Binding AddUserCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="*">
+
+        <CollectionView ItemsSource="{Binding  Users}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:User">
+                    <Frame Margin="10,5,10,0" Padding="10">
+                        <Label Text="{Binding Name}" FontSize="18"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:UsersListPageViewmodel}}, Path= DisplayActionSheetCommand}}"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+
+   
+</ContentPage>

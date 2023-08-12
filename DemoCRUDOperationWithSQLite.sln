@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCRUDOperationWithSQLite", "DemoCRUDOperationWithSQLite\DemoCRUDOperationWithSQLite.csproj", "{7A2B7D56-A135-4968-AAED-95C81C1A3641}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2B7D56-A135-4968-AAED-95C81C1A3641}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC53A446-EE85-431A-9331-007ACBF8D894}
+	EndGlobalSection
+EndGlobal
